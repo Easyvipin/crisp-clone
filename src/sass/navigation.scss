@@ -1,0 +1,57 @@
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.down-icon {
+  position: absolute;
+  text-align: center;
+  left: 40%;
+  bottom: -14px;
+}
+.fa-circle {
+  color: red;
+  font-size: 10px;
+}
+.each-nav {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+
+  a {
+    text-decoration: none;
+    color: $majorColor;
+    text-transform: uppercase;
+  }
+}
+
+.nav-btn {
+  border: 2px solid $majorColor;
+  padding: 8px 12px;
+}
+
+.Community {
+  position: absolute;
+  bottom: -190px;
+  left: -82px;
+  width: 300px;
+  font-size: 15px;
+  display: none;
+  padding: 10px 10px;
+  background-color: $strongColor;
+}
+.Products {
+  position: absolute;
+  bottom: -65px;
+  left: -80px;
+  width: 300px;
+  font-size: 15px;
+  display: none;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: $strongColor;
+}
+.active-dropdown {
+  display: flex;
+  flex-direction: column;
+}

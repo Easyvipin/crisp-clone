@@ -1,0 +1,39 @@
+.feature {
+  .content-65 {
+    h6 {
+      border-bottom: 2px solid rgb(140, 139, 139);
+      font-size: 24px;
+      font-weight: 400;
+      padding: 10px 0px;
+    }
+
+    .companies {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      img {
+        width: 90px;
+      }
+    }
+    .mobile-view {
+      position: relative;
+      text-align: center;
+      width: 620px;
+      height: 320px;
+      margin: auto;
+      margin-top: 80px;
+      img {
+        width: 620px;
+        height: 320px;
+      }
+      iframe {
+        position: absolute;
+        top: 9%;
+        left: 10%;
+      }
+    }
+  }
+}

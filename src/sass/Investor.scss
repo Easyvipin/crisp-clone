@@ -1,0 +1,223 @@
+.services {
+  .content-65 {
+    .sub-description {
+      width: 60%;
+    }
+    .service-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .each-service {
+        img {
+          width: 120px;
+        }
+        h6 {
+          font-size: 21px;
+          margin-top: -12px;
+        }
+        button:nth-of-type(2) {
+          margin: 35px 0px;
+        }
+        button {
+          margin: -22px 0px;
+        }
+        p {
+          margin-top: 2px;
+        }
+        width: 250px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* access */
+
+.Access {
+  .content-65 {
+    .row {
+      .mobile-section {
+        background-image: url("../crispimage/network.png");
+        text-align: center !important;
+        background-size: contain;
+      }
+      .access-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          width: 350px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  .trusters {
+    text-align: center;
+    margin-top: 100px;
+    .companies {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 110px;
+      }
+    }
+  }
+}
+
+/* stats */
+
+.stats {
+  .content-65 {
+    display: flex;
+    padding: 0px 30px;
+    .stat-desc {
+      width: 70%;
+      .header-full {
+        border-bottom: 3px solid $minorColor;
+      }
+      p {
+        width: 70%;
+      }
+    }
+    .stat-percent {
+      margin-left: -10px;
+      position: relative;
+
+      img {
+        width: 200px;
+      }
+      .numbers {
+        position: absolute;
+        left: 24%;
+        top: 20%;
+        span {
+          font-size: 30px;
+          font-family: "Monse";
+          font-family: "Montserrat", sans-serif;
+        }
+        h1 {
+          .percent {
+            font-size: 20px;
+            margin-left: -13px;
+          }
+        }
+      }
+    }
+  }
+  .left {
+    flex-direction: row-reverse;
+
+    .stat-desc {
+      width: 72%;
+      margin-right: 80px;
+      .header-full {
+        text-align: right;
+      }
+      p {
+        text-align: right;
+        margin-left: auto;
+      }
+    }
+    .stat-percent {
+      margin-left: 10px !important;
+      img {
+      }
+    }
+  }
+}
+
+/* CONTACT */
+.contact {
+  background-image: url("../crispimage/contbanner.jpg");
+  background-size: cover;
+
+  .content-65 {
+    text-align: center;
+    margin-top: 20px;
+    .contact-banner {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      h5 {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  .content-65 {
+    text-align: center;
+    margin-top: 20px;
+
+    button {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      top: 4%;
+      right: 18%;
+      i {
+        font-size: 30px;
+        color: $strongColor;
+      }
+    }
+    .row {
+      .col-25 {
+        text-align: left;
+        img {
+          width: 200px;
+        }
+        border-right: 2px dashed $strongColor;
+      }
+      .col-75 {
+        padding: 0px 20px;
+        .row {
+          .col-50 {
+            .crisp-links {
+              padding: 10px;
+              text-align: left;
+              list-style: none;
+              .each-link {
+                margin: 4px 0px;
+                a {
+                  text-decoration: underline;
+                  color: $strongColor;
+                }
+              }
+            }
+            .social-links {
+              list-style: none;
+              display: flex;
+              padding: 10px;
+              .each-social {
+                a {
+                  img {
+                    width: 30px;
+                    margin: 10px;
+                  }
+                }
+              }
+            }
+            h6 {
+              text-align: right;
+              font-size: 16px;
+            }
+            p {
+              text-align: right;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}
