@@ -17,8 +17,8 @@ const Access = () => {
           </div>
           <div className="col-50 access-desc">
             <div className="border-full-header">
-              <h4>ACCESS OVER</h4>
-              <h4>30,000 INVESTORS</h4>
+              <h4 className="primary-text">ACCESS OVER</h4>
+              <h4 className="primary-text">30,000 INVESTORS</h4>
             </div>
             <p>
               &nbsp; &nbsp; In partnership with Wholesale Investor, you can

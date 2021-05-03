@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../crispimage/crisp1.png";
 const Navigation = () => {
+  const handleNav = () => {
+    console.log("called");
+    document.querySelector(".nav-list").classList.toggle("active");
+    document.querySelector(".ham-menu").classList.toggle("active-menu");
+  };
+
   let allDropdowns = Array.from(document.querySelectorAll(".dropdown"));
   allDropdowns.forEach((item) => {
     item.onmouseover = function () {
@@ -21,12 +27,19 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="container-full">
+    <nav className="container-full navigation">
+      <button className="ham-menu active-menu" onClick={handleNav}>
+        <i className=" fa fa-ellipsis-h"></i>
+      </button>
+
       <ul className="content-65 nav-list">
         <li className="each-nav">
-          <Link>
+          <Link to="/">
             <img src={logo} class="logo-nav" alt="Crisp.io" />
           </Link>
+        </li>
+        <li className="each-nav cross" onClick={handleNav}>
+          <Link>&times;</Link>
         </li>
         <li className="each-nav dropdown" data-toggle="Products">
           <Link>
@@ -62,10 +75,10 @@ const Navigation = () => {
           </div>
         </li>
         <li className="each-nav ">
-          <Link>Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li className="each-nav ">
-          <Link>SIGN IN</Link>
+          <Link to="/auth">SIGN IN</Link>
         </li>
         <li className="each-nav nav-btn">
           <Link>GET STARTED</Link>

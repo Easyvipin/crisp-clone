@@ -7,7 +7,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
 @import "./variable.scss", "./crispkit.scss", "./navigation.scss",
-  "./banner.scss", "./feature.scss", "./Investor.scss";
+  "./banner.scss", "./feature.scss", "./Investor.scss", "./Contactpage.scss",
+  "./Auth.scss";

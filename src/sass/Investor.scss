@@ -30,12 +30,27 @@
         text-align: center;
       }
     }
+    @media screen and (max-width: 900px) {
+      .border-full-header {
+        h4 {
+          font-size: 30px;
+        }
+      }
+      .sub-description {
+        width: 90%;
+      }
+      .service-list {
+        justify-content: center;
+      }
+    }
   }
 }
 
 /* access */
 
 .Access {
+  display: flex;
+  flex-direction: column;
   .content-65 {
     .row {
       .mobile-section {
@@ -63,8 +78,40 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       img {
         width: 110px;
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .content-65 {
+      .row {
+        .mobile-section {
+          img {
+            width: 140px;
+          }
+        }
+        .access-desc {
+          .border-full-header {
+            h4 {
+              font-size: 30px;
+            }
+          }
+          p {
+            width: 100% !important;
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+
+    .trusters {
+      .companies {
+        display: flex;
+        img {
+          width: 70px;
+        }
       }
     }
   }
@@ -130,6 +177,27 @@
       }
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .content-65 {
+      flex-wrap: wrap;
+      .stat-desc {
+        width: 100%;
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .left {
+      .stat-desc {
+        width: 100%;
+        margin-right: 0px;
+      }
+    }
+  }
 }
 
 /* CONTACT */
@@ -146,6 +214,20 @@
       margin-top: 40px;
       h5 {
         margin-right: 25px;
+      }
+    }
+  }
+
+  @media screen and(max-width:900px) {
+    .content-65 {
+      .contact-banner {
+        flex-wrap: wrap;
+        h5 {
+          font-size: medium;
+        }
+        button {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -173,6 +255,11 @@ footer {
     .row {
       .col-25 {
         text-align: left;
+        @media screen and (max-width: 900px) {
+          text-align: center;
+          border-bottom: 2px dashed $strongColor;
+          border-right: none;
+        }
         img {
           width: 200px;
         }
@@ -193,6 +280,9 @@ footer {
                   color: $strongColor;
                 }
               }
+              @media screen and (max-width: 900px) {
+                text-align: center;
+              }
             }
             .social-links {
               list-style: none;
@@ -206,14 +296,23 @@ footer {
                   }
                 }
               }
+              @media screen and (max-width: 900px) {
+                justify-content: center;
+              }
             }
             h6 {
               text-align: right;
               font-size: 16px;
+              @media screen and (max-width: 900px) {
+                text-align: center;
+              }
             }
             p {
               text-align: right;
               font-style: italic;
+              @media screen and (max-width: 900px) {
+                text-align: center;
+              }
             }
           }
         }

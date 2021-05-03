@@ -35,5 +35,30 @@
         left: 10%;
       }
     }
+    @media screen and(max-width:900px) {
+      .companies {
+        justify-content: center;
+        img {
+          margin: 10px;
+          width: 70px;
+        }
+      }
+      .mobile-view {
+        width: 360px;
+        height: 200px;
+
+        margin-left: -30px;
+        img {
+          width: 300px;
+          height: 200px;
+        }
+        iframe {
+          width: 250px;
+          height: 162px;
+          left: 15%;
+          top: 10%;
+        }
+      }
+    }
   }
 }

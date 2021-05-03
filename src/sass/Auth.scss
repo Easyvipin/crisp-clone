@@ -1,0 +1,67 @@
+.auth-container {
+  background-image: url("../crispimage/contbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .signin {
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding: 10px 0px;
+    h6 {
+      border-bottom: 2px solid $minorColor;
+      padding: 10px 30px;
+      font-size: 18px;
+    }
+  }
+  .providers {
+    padding: 10px 30px;
+  }
+  .provider-btn {
+    background: transparent;
+    img {
+      width: 240px;
+    }
+    border: none;
+    padding: 0px 10px;
+    outline: none;
+    margin-top: 8px;
+  }
+
+  form {
+    padding: 10px 30px;
+    .input-group {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #fff;
+      width: 100%;
+      padding: 7px 10px;
+      margin-top: 10px;
+      i {
+        font-size: 28px;
+        color: #b9b9b9;
+        width: 10%;
+      }
+      input[type="text"],
+      input[type="password"] {
+        border: none;
+        margin-left: 8px;
+        font-size: 14px;
+        width: 90%;
+        outline: none;
+      }
+    }
+    button {
+      background: $minorColor;
+      color: $strongColor;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    height: 100vh;
+  }
+}
