@@ -6,6 +6,7 @@ import Home from "./component/Home";
 import Contactpage from "./component/Contact/Contactpage";
 import auth from "./component/Auth/auth";
 import Navigation from "./component/Navigation";
+import Capital from "./component/Capital/Capital";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route path="/contact" exact component={Contactpage} />
           <Route path="/auth" exact component={auth} />
+          <Route path="/capitalraising" exact component={Capital} />
           <Route path="/" exact component={Home} />
         </Switch>
         <Footer />

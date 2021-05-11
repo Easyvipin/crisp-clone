@@ -1,0 +1,290 @@
+.capital-banner {
+  background-image: url("../crispimage/banner.jpg");
+  position: relative;
+  z-index: -90;
+  height: 850px;
+
+  .banner-content {
+    z-index: 100;
+    .header {
+      h2 {
+        font-size: 100px;
+        color: $strongColor;
+      }
+    }
+    .row {
+      .banner-body {
+        .features {
+          .feature {
+            padding: 10px 10px;
+            background-color: #808080;
+            color: $strongColor;
+            margin-top: 20px;
+          }
+          .arrow {
+            display: inline-block;
+            color: $strongColor;
+            font-size: 50px;
+            width: 200px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: "900px") {
+      padding-top: 50px;
+      .header {
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .row {
+        .banner-body {
+          .features {
+            .feature {
+              font-size: 15px;
+              text-align: left;
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.capital-banner::after {
+  content: " ";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 62, 77, 0.9);
+  z-index: -80;
+}
+
+/* .description */
+.description {
+  .row {
+    .desc-img {
+      position: relative;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+      .crispmobile {
+        width: 320px;
+      }
+      .advisor {
+        position: absolute;
+        width: 400px !important;
+        left: 10%;
+      }
+      @media screen and (max-width: 900px) {
+        .crispmobile {
+          width: 250px;
+        }
+        .advisor {
+          position: absolute;
+          width: 200px !important;
+        }
+      }
+    }
+    .desc-data {
+      padding: 0px 40px;
+      p {
+        font-size: 18px;
+      }
+      .border-full-header {
+        width: 100%;
+      }
+      p {
+        width: 100%;
+        text-align: right;
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 900px) {
+        padding: 20px 10px;
+        .border-full-header {
+          h4 {
+            text-align: center;
+            font-size: 20px;
+          }
+        }
+        p {
+          font-size: 17px;
+          text-align: left;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+  .know-more {
+    text-align: center;
+    margin: auto;
+
+    span {
+      display: block;
+      font-size: 70px;
+      color: $minorColor;
+    }
+    button {
+      font-size: 28px;
+      padding: 1rem 3rem;
+    }
+    @media screen and (max-width: "900px") {
+      h4 {
+        font-size: 23px;
+      }
+      button {
+        font-size: 18px;
+        padding: 1rem;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* steps */
+
+.steps {
+  .content-65 {
+    .row {
+      margin: auto;
+      align-items: center;
+      .col-75 {
+        .step-list {
+          padding: 0;
+          .each-step {
+            display: flex;
+            align-items: center;
+            background-color: #c7c7c7;
+            padding: 10px 20px;
+            width: 70%;
+            color: #fff;
+            margin-top: 20px;
+            span {
+              font-size: 60px;
+              margin-right: 10px;
+              align-self: flex-end;
+            }
+          }
+          @media screen and(max-width:"900px") {
+            .each-step {
+              width: 100%;
+              h6 {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      .col-25 {
+        text-align: center;
+
+        /* mobile */
+        @media screen and(max-width:"900px") {
+          img {
+            width: 130px;
+          }
+        }
+      }
+    }
+    .trusters {
+      h6 {
+        width: 100%;
+      }
+      .companies {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media screen and(max-width:"900px") {
+        h6 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* guide */
+.guide-banner {
+  background-image: url("../crispimage/banner.jpg");
+  position: relative;
+  z-index: -90;
+  height: 650px;
+
+  .banner-content {
+    z-index: 100;
+    .header {
+      width: 100%;
+      h2 {
+        font-size: 50px;
+        color: $strongColor;
+      }
+    }
+    .row {
+      margin-top: 40px;
+      .banner-body {
+        text-align: center !important;
+        p {
+          color: #fff;
+          font-size: 28px;
+        }
+        h5 {
+          color: #fff;
+          margin-top: 70px !important;
+        }
+        .button-group {
+          justify-content: center;
+        }
+      }
+      .col-50 {
+        img {
+          width: 170px;
+        }
+      }
+    }
+
+    @media screen and(max-width:"900px") {
+      .header {
+        h2 {
+          font-size: 18px;
+        }
+      }
+      .row {
+        margin-top: 0px;
+        .banner-body {
+          p {
+            font-size: 21px;
+          }
+          h5 {
+            font-size: 21px;
+          }
+        }
+        .col-50 {
+          img {
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: "900px") {
+    height: auto !important;
+  }
+}
+.guide-banner::after {
+  content: " ";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 62, 77, 0.9);
+  z-index: -80;
+}

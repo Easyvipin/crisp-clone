@@ -62,7 +62,7 @@
 .each-nav {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-
+  text-align: center;
   a {
     text-decoration: none;
     color: $majorColor;
@@ -77,24 +77,43 @@
 
 .Community {
   position: absolute;
-  bottom: -190px;
   left: -82px;
   width: 300px;
-  font-size: 15px;
   display: none;
-  padding: 10px 10px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  font-size: 15px;
   background-color: $strongColor;
+
+  @media screen and(max-width:"900px") {
+    position: relative !important;
+    width: auto;
+    left: 0;
+    text-align: center;
+  }
 }
 .Products {
   position: absolute;
-  bottom: -65px;
   left: -80px;
   width: 300px;
   font-size: 15px;
   display: none;
-  padding: 10px 10px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   text-align: center;
   background-color: $strongColor;
+
+  @media screen and(max-width:"900px") {
+    position: relative !important;
+    width: auto;
+    left: 0;
+    text-align: center;
+  }
 }
 .active-dropdown {
   display: flex;

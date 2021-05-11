@@ -8,22 +8,14 @@ const Navigation = () => {
     document.querySelector(".ham-menu").classList.toggle("active-menu");
   };
 
-  let allDropdowns = Array.from(document.querySelectorAll(".dropdown"));
-  allDropdowns.forEach((item) => {
-    item.onmouseover = function () {
-      let dropdown = this.dataset.toggle;
-      document.querySelector(".Community").classList.remove("active-dropdown");
-      document.querySelector(".Products").classList.remove("active-dropdown");
-      document.querySelector(`.${dropdown}`).classList.add("active-dropdown");
-    };
-    item.onmouseout = function () {
-      document.querySelector(".Community").classList.remove("active-dropdown");
-      document.querySelector(".Products").classList.remove("active-dropdown");
-    };
-  });
-
-  const handleOut = (e) => {
-    console.log(e.target.classList);
+  const handleHover = (dropdown) => {
+    document.querySelector(".Community").classList.remove("active-dropdown");
+    document.querySelector(".Products").classList.remove("active-dropdown");
+    document.querySelector(`.${dropdown}`).classList.add("active-dropdown");
+  };
+  const handleOut = () => {
+    document.querySelector(".Community").classList.remove("active-dropdown");
+    document.querySelector(".Products").classList.remove("active-dropdown");
   };
 
   return (
@@ -41,7 +33,12 @@ const Navigation = () => {
         <li className="each-nav cross" onClick={handleNav}>
           <Link>&times;</Link>
         </li>
-        <li className="each-nav dropdown" data-toggle="Products">
+        <li
+          className="each-nav dropdown"
+          data-toggle="Products"
+          onMouseOver={() => handleHover("Products")}
+          onMouseOut={handleOut}
+        >
           <Link>
             Products
             <span class="down-icon">
@@ -57,7 +54,12 @@ const Navigation = () => {
             <i class="fas fa-circle"></i> Media
           </Link>
         </li>
-        <li className="each-nav dropdown" data-toggle="Community">
+        <li
+          className="each-nav dropdown"
+          data-toggle="Community"
+          onMouseOver={() => handleHover("Community")}
+          onMouseOut={handleOut}
+        >
           <Link>
             Community
             <span class="down-icon">
